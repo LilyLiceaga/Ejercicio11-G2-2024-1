@@ -137,6 +137,7 @@
             this.btnGuardar2.TabIndex = 0;
             this.btnGuardar2.Text = "Guardar";
             this.btnGuardar2.UseVisualStyleBackColor = true;
+            this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click);
             // 
             // Form1
             // 
