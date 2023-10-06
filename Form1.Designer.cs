@@ -47,7 +47,7 @@
             this.btnSiguiente.Location = new System.Drawing.Point(355, 408);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(146, 50);
-            this.btnSiguiente.TabIndex = 0;
+            this.btnSiguiente.TabIndex = 5;
             this.btnSiguiente.Text = "Siguiente";
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
@@ -87,7 +87,7 @@
             this.txtbNombre.Location = new System.Drawing.Point(185, 105);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(364, 22);
-            this.txtbNombre.TabIndex = 2;
+            this.txtbNombre.TabIndex = 0;
             this.txtbNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // txtbTelefono
@@ -95,7 +95,7 @@
             this.txtbTelefono.Location = new System.Drawing.Point(185, 177);
             this.txtbTelefono.Name = "txtbTelefono";
             this.txtbTelefono.Size = new System.Drawing.Size(364, 22);
-            this.txtbTelefono.TabIndex = 2;
+            this.txtbTelefono.TabIndex = 1;
             this.txtbTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // txtbEdad
@@ -130,7 +130,7 @@
             this.txtbDireccion.Location = new System.Drawing.Point(185, 332);
             this.txtbDireccion.Name = "txtbDireccion";
             this.txtbDireccion.Size = new System.Drawing.Size(364, 22);
-            this.txtbDireccion.TabIndex = 2;
+            this.txtbDireccion.TabIndex = 3;
             this.txtbDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // btnGuardar2
@@ -139,7 +139,7 @@
             this.btnGuardar2.Location = new System.Drawing.Point(128, 408);
             this.btnGuardar2.Name = "btnGuardar2";
             this.btnGuardar2.Size = new System.Drawing.Size(146, 50);
-            this.btnGuardar2.TabIndex = 0;
+            this.btnGuardar2.TabIndex = 4;
             this.btnGuardar2.Text = "Guardar";
             this.btnGuardar2.UseVisualStyleBackColor = true;
             this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click);

@@ -50,6 +50,7 @@ namespace Ejercicio10_G2_2024_1
                 txtbTelefono.Text = persona.Telefono;
                 txtbEdad.Text = persona.Edad.ToString();
                 txtbDireccion.Text = persona.Direccion;
+
             }
             catch(NullReferenceException error)
             {
@@ -63,6 +64,7 @@ namespace Ejercicio10_G2_2024_1
 
         private void txtbNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
+
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Guardar2();
