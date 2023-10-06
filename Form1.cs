@@ -38,9 +38,10 @@ namespace Ejercicio10_G2_2024_1
             //personas.Add(new Cliente(txtbNombre.Text, txtbTelefono.Text, byte.Parse(txtbEdad.Text), txtbDireccion.Text));
 
             Guardar2();
+            
         }
 
-        private void btnSiguiente_Click(object sender, EventArgs e)
+        private void btnSiguiente_Click(object sender, EventArgs e) 
         {
             try
             {
@@ -50,11 +51,14 @@ namespace Ejercicio10_G2_2024_1
                 txtbTelefono.Text = persona.Telefono;
                 txtbEdad.Text = persona.Edad.ToString();
                 txtbDireccion.Text = persona.Direccion;
+                int contador = indice + 1;
+                lbGuardado.Text = "Contactos: " + contador + " / " + personas.Count;
+
 
             }
-            catch(NullReferenceException error)
+            catch (NullReferenceException error)
             {
-                MessageBox.Show("Error: Debes agregar al menos una persona");
+                MessageBox.Show(" ");
             }
             catch(IndexOutOfRangeException error)
             {
@@ -68,8 +72,7 @@ namespace Ejercicio10_G2_2024_1
             if (e.KeyChar == (char)Keys.Enter)
             {
                 Guardar2();
-            }
-
+            } 
 
         }
 
@@ -79,7 +82,12 @@ namespace Ejercicio10_G2_2024_1
             txtbNombre.Clear(); 
             txtbTelefono.Clear(); 
             txtbEdad.Clear(); 
-            txtbDireccion.Clear(); 
+            txtbDireccion.Clear();
+            lbGuardado.Text = "Contactos: " + personas.Count;
+
         }
+
+
+
     }
 }
