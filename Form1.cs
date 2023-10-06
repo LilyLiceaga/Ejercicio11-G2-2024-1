@@ -35,7 +35,9 @@ namespace Ejercicio10_G2_2024_1
 
         private void btnGuardar2_Click(object sender, EventArgs e)
         {
-            personas.Add(new Cliente(txtbNombre.Text, txtbTelefono.Text, byte.Parse(txtbEdad.Text), txtbDireccion.Text) );
+            //personas.Add(new Cliente(txtbNombre.Text, txtbTelefono.Text, byte.Parse(txtbEdad.Text), txtbDireccion.Text));
+
+            Guardar2();
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
@@ -57,6 +59,25 @@ namespace Ejercicio10_G2_2024_1
             {
                 MessageBox.Show("Error: Debes agregar al menos una persona");
             }
+        }
+
+        private void txtbNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                Guardar2();
+            }
+
+
+        }
+
+        private void Guardar2() //metodo guardar
+        {
+            personas.Add(new Cliente(txtbNombre.Text, txtbTelefono.Text, byte.Parse(txtbEdad.Text), txtbDireccion.Text));
+            txtbNombre.Clear(); 
+            txtbTelefono.Clear(); 
+            txtbEdad.Clear(); 
+            txtbDireccion.Clear(); 
         }
     }
 }

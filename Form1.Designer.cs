@@ -88,6 +88,7 @@
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(364, 22);
             this.txtbNombre.TabIndex = 2;
+            this.txtbNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // txtbTelefono
             // 
@@ -95,6 +96,7 @@
             this.txtbTelefono.Name = "txtbTelefono";
             this.txtbTelefono.Size = new System.Drawing.Size(364, 22);
             this.txtbTelefono.TabIndex = 2;
+            this.txtbTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // txtbEdad
             // 
@@ -102,6 +104,7 @@
             this.txtbEdad.Name = "txtbEdad";
             this.txtbEdad.Size = new System.Drawing.Size(364, 22);
             this.txtbEdad.TabIndex = 2;
+            this.txtbEdad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // lbGuardado
             // 
@@ -128,6 +131,7 @@
             this.txtbDireccion.Name = "txtbDireccion";
             this.txtbDireccion.Size = new System.Drawing.Size(364, 22);
             this.txtbDireccion.TabIndex = 2;
+            this.txtbDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtbNombre_KeyPress);
             // 
             // btnGuardar2
             // 
