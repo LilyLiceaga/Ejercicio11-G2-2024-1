@@ -87,7 +87,13 @@ namespace Ejercicio10_G2_2024_1
 
         }
 
-
-
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lbGuardado.Text = "Contactos: " + personas.Count;
+            txtbNombre.Clear();
+            txtbTelefono.Clear();
+            txtbEdad.Clear();
+            txtbDireccion.Clear();
+        }
     }
 }

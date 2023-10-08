@@ -39,12 +39,13 @@
             this.lbDireccion = new System.Windows.Forms.Label();
             this.txtbDireccion = new System.Windows.Forms.TextBox();
             this.btnGuardar2 = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(355, 408);
+            this.btnSiguiente.Location = new System.Drawing.Point(296, 409);
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Size = new System.Drawing.Size(146, 50);
             this.btnSiguiente.TabIndex = 5;
@@ -137,7 +138,7 @@
             // btnGuardar2
             // 
             this.btnGuardar2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar2.Location = new System.Drawing.Point(128, 408);
+            this.btnGuardar2.Location = new System.Drawing.Point(90, 409);
             this.btnGuardar2.Name = "btnGuardar2";
             this.btnGuardar2.Size = new System.Drawing.Size(146, 50);
             this.btnGuardar2.TabIndex = 4;
@@ -145,11 +146,25 @@
             this.btnGuardar2.UseVisualStyleBackColor = true;
             this.btnGuardar2.Click += new System.EventHandler(this.btnGuardar2_Click);
             // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnClear.Location = new System.Drawing.Point(501, 409);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(48, 50);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "C";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(637, 554);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lbGuardado);
             this.Controls.Add(this.txtbEdad);
             this.Controls.Add(this.txtbDireccion);
@@ -182,6 +197,7 @@
         private System.Windows.Forms.Label lbDireccion;
         private System.Windows.Forms.TextBox txtbDireccion;
         private System.Windows.Forms.Button btnGuardar2;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
